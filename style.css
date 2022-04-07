@@ -1,0 +1,537 @@
+*{
+    margin: 0 auto;
+}
+body{
+    background-color: #242424;
+    color: white;
+    font-size: 16px;
+    min-height: 100vh;
+    font-family: Marfa,system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+   overflow-x: hidden;
+}
+
+@media screen and (max-width: 769px){
+    body {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+}
+
+header{
+    background: url('images/homeBG.png') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+header .header{
+    background: rgba(3,3,3,.5);
+    height: 100vh;
+} 
+
+nav{
+    display: flex;
+    background-color: rgba(0, 94, 44,.7);
+    height: 4rem;
+    position:fixed;
+    width: 100%;
+    z-index: 10000;
+
+}
+
+.logo{
+    /* margin: 0.5em 2em; */
+    font-size: 2em;
+    align-self: center;
+}
+nav ul{
+    font-size: 1.2em;
+    font-weight: 600;
+    list-style:none;
+    align-self: center;
+    margin-right: 2rem ;
+
+    
+
+}
+nav ul li {
+  display: inline-block;
+  margin: 1em;
+  transition: 1s;
+  /* letter-spacing: .1rem; */
+  
+
+  
+}
+
+
+.nav-item:hover{
+    text-shadow:0px 0px 10px rgb(15, 10, 10);
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    letter-spacing: .1rem;
+    transition: letter-spacing 1.5s;
+   
+}
+.hero-content{
+    padding-top: 4.5rem;
+    max-width: 70rem;
+    overflow: hidden;
+}
+
+.hero-content h1{
+    font-weight: 300;
+    font-size: 4.75rem;
+    line-height: 3.75rem;
+    margin-bottom: 2rem;
+    padding-top: 4rem ;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    width: 34rem;
+    line-height: 2rem;
+    margin-left: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+@media screen and (max-width: 769px) {
+    .header{
+        height: 100vh;
+    }
+    .hero-content { 
+        width: 95%;
+         margin: auto;
+    }
+}
+
+
+.hero-content button{
+    background-color: #005e2c;
+    color: white;
+    border: white 3px solid;
+    font-size: 1.5rem;
+    padding: 0rem 2.5rem;
+    text-align: center;
+    line-height: 3rem;
+    margin: 6px;
+    transition: 1s;
+}
+
+.hero-content button:hover{
+    border-radius:4px;
+    box-shadow: 0px 0px 6px 0px  white;
+    background-color:#015327 ;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+/* -------------------------------------- ENDS header Section --------------- */
+
+
+/* -------------------------------------- Start About section --------------- */
+
+
+/* Edited Here Mouhand */
+.ABOUT{
+    /* background-color:#eee; */
+    color: black;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+.backgroud{
+    position: absolute;
+    top: 0;
+    background: #eee;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+        svg{
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            height: 150vh;
+        }   
+/* Edited Here Mouhand */
+
+
+        .rectangles{
+            fill: #015327;
+            stroke: none;
+        }
+
+
+
+        .about-content{
+            z-index: 3;
+            padding-top: 3.5rem;
+            overflow: hidden;
+            display: flex;
+        }
+        .text-content{
+            max-width: 40rem;
+            margin: 0;
+            margin-left: 7rem;
+        }
+        .img-content img {
+            width: 20rem;
+            margin: 0;
+            margin-left: 10rem;
+            height: 22rem;
+        }
+
+        .ABOUT h2{
+            color: #005e2c;
+            font-weight: 600;
+            font-size: 2.75rem;
+            line-height: 1.75rem;
+            margin-bottom: 2rem;
+        
+        }
+        .ABOUT p {
+            font-size: 1.5rem;
+            width: 34rem;
+            line-height: 2rem;
+            margin-left: 0;
+            margin-bottom: 2rem;
+        }
+        .ABOUT ul{
+            font-size: 1.2em;
+            font-weight: 600;
+            list-style:none;
+            align-self: center;
+            padding: 0 ;
+
+        }
+        .ABOUT ul li {
+        display: inline-block;
+        margin: 1em;
+        transition: 1s;
+        }
+        .about-item:hover{
+            text-shadow:0px 0px 10px rgb(15, 10, 10);
+            cursor: pointer;
+            -webkit-transition: all 1s ease;
+            transition: all 1s ease;
+            
+        }
+
+
+
+/* -------------------------------------- End About section --------------- */
+
+/* -------------------------------------- Start MENU section --------------- */
+
+/* Edited Here Mouhand */
+
+.MENU{
+        /* background-color:#eee; */
+        color: black;
+        width: 100%;
+    height: 125vh;
+    position: relative;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+/* Edited Here Mouhand */
+
+
+.MENU h2{
+            color: #005e2c;
+            font-weight: 600;
+            font-size: 2.75rem;
+            line-height: 1.75rem;
+            margin-bottom: 3rem;
+            text-align: center;
+}
+.MENU .meals{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.meals div{
+    width: 25%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.meals div img{
+    width: 15rem;
+    height: 17rem;
+}
+.meals h3{
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+}
+/* -------------------------------------- End  MENU section --------------- */
+
+/* -------------------------------------- Start EXPERT section --------------- */
+.EXPERT{
+    background: url('images/expertBG.png') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.EXPERT .EXPERT2{
+    background: rgba(3,3,3,.5);
+    height: 90vh;
+}
+
+.expert-content{
+    max-width: 75rem;
+    margin: 0;
+    margin-left: 7rem;
+    padding-top: 3.5rem;
+
+}
+.expert-content h2{
+
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+}
+.expert-content .Chef{
+    display: flex;
+    width: 60rem;
+    text-align: left;
+    border: 5px solid #015327;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.expert-content .Chef img{
+    width: 8rem;
+    height:8rem ;
+    padding: .5rem;
+}
+
+.Chef h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: .6rem;
+    margin-left: .6rem;
+}
+.Chef div{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: .5rem;
+}
+/* -------------------------------------- End  EXPERT section --------------- */
+
+/* -------------------------------------- Start TESTIMONIALS section --------------- */
+.TESTIMONIALS{
+    background-color:#eee;
+    color: black;
+    width: 100%;
+    height: 75vh;
+}
+.TESTIMONIALS h2{
+    padding-top: 2.5rem;
+     color: #005e2c;
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.TESTIMONIALS .posts{
+    display: flex;
+}
+.TESTIMONIALS .posts div{
+    border: 5px solid #015327;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 22rem;
+    height:15rem ;
+    text-align: center;
+    margin-top: 2rem;
+}
+.TESTIMONIALS .posts div p {
+    line-height:1.5 ;
+    font-size: 1.2rem;
+}
+.TESTIMONIALS .posts div img{
+    margin-top: -4rem;
+    width: 5rem;
+    height: 5rem ;
+    border-radius: 50%;
+    border: 5px solid #015327;
+}
+i {
+    color: gold;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: .2rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+/* -------------------------------------- End  TESTIMONIALS section --------------- */
+
+/* -------------------------------------- Start contact us  section --------------- */
+
+.CONTACT-US{
+    background-image: url('images/contactBG2.png');
+    background-size: 100% 100%;
+}
+
+.CONTACT-US .CONTACT {
+    background: rgba(3,3,3,.5);
+    height: 90vh;
+}
+.CONTACT h2{
+    padding-top: 2.5rem;
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.CONTACT form{
+    background: rgba(255,255,255,0.3);
+    margin-left: 50%;
+    margin-right: 25rem;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    border: 5px solid #015327;
+    width: 30rem;
+    height: 21rem;
+    color: black;
+    overflow:hidden ;
+
+}
+form div{
+    margin-bottom: .3rem;
+}
+label , input{
+    display: block;
+    
+
+}
+label{
+   padding-left: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+input , textarea{
+    background-color:rgba(255,255,255,0.3) ;
+    color: black;
+    border: #005e2c 3px solid;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 6px;
+    overflow:-moz-hidden-unscrollable ;
+    width: 25rem;
+}
+
+input:target , input:focus-visible , input:focus ,textarea:focus-visible ,textarea:target ,textarea:focus {
+    border-color: #005e2c 3px solid;
+    box-shadow:0px 0px 6px 0px  black ;
+    outline: 0;
+}
+
+form button{
+        background-color: #005e2c;
+        color: white;
+        border: white 3px solid;
+        font-size: 1.5rem;
+        padding: 0rem 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+        margin-left: 1rem;
+        transition: 1s;
+    
+}
+form button:hover{
+        border-radius:4px;
+        box-shadow: 0px 0px 6px 0px  white;
+        background-color:#015327 ;
+        cursor: pointer;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+}
+/* -------------------------------------- End  TESTIMONIALS section --------------- */
+
+/* -------------------------------------- Start contact us  section --------------- */
+footer{
+    height: 15rem;
+    display: flex;
+    background-color: rgb(59, 75, 25);
+}
+.footer-content{
+    margin-left: 9rem;
+    padding-top: 2.5rem;
+    width: 25rem;
+    
+}
+footer h3{
+   
+    font-size: 2rem;
+}
+
+footer p{
+
+    padding-top: .5rem;
+}
+footer .social i {
+    color: white;
+    padding-left: .5rem;
+    transition: 1s;
+}
+footer .social{
+    padding-top: 1.5rem;
+    
+    margin-left: 0 ;
+}
+.social span{
+
+    line-height: 1;
+}
+.social p{
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+.social a {
+    color: gold;
+    transition: 1s;
+}
+
+.social i:hover , .social a:hover {
+    text-shadow: 0px 0px 4px black;
+         font-size: 1.7rem;
+        cursor: pointer;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
